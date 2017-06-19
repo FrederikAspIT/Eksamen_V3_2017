@@ -43,14 +43,14 @@
             
             <!-- Log in formular -->
             <article class="col-md-12">
-                <form action="" method="post">
+                <form action="checkUser.php" method="post">
                     <div class="form-group">
-                        <label for="username" style="font-size:12px; color:#333333;"><b>Brugernavn</b></label>
-                        <input type="text" class="form-control" name="username" id="username" placeholder="Indtast dit brugernavn" style="border-radius:2px;">
+                        <label for="formUsername" style="font-size:12px; color:#333333;"><b>Brugernavn</b></label>
+                        <input type="text" class="form-control" name="formUsername" placeholder="Indtast dit brugernavn" style="border-radius:2px;">
                     </div>
                     <div class="form-group">
-                        <label for="password" style="font-size:12px; color:#333333;"><b>Password</b></label>
-                        <input type="password" class="form-control" name="password" id="password" placeholder="Indtast dit password" style="border-radius:2px;">
+                        <label for="formPassword" style="font-size:12px; color:#333333;"><b>Password</b></label>
+                        <input type="password" class="form-control" name="formPassword" placeholder="Indtast dit password" style="border-radius:2px;">
                     </div>
                     <input type="submit" value="Log ind" class=" btn btn-default bt-default " style="border-radius:2px;">
                 </form>

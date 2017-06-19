@@ -96,6 +96,9 @@
                     
                     
                     <!-- Formular her -->
+                    <?php 
+                     if(isset($_SESSION['username']) && !empty($_SESSION['username']) ){ ?>
+                        
                     <article class="col-md-12">
                         <form action="insert.php" method="get" class="form-horizontal">
                             <div class="form-group col-md-12">
@@ -125,6 +128,10 @@
                             <input type="submit" value="Udgiv indlæg" class=" btn btn-default bt-default btn-large  col-md-offset-1" style="border-radius:2px;">
                         </form>
                     </article>
+                    
+                    <?php    
+                     }
+                    ?>
                     
                     <!-- Artikel her -->
                     <?php include "fetchDb.php"; ?>
