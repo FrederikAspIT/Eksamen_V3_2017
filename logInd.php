@@ -7,8 +7,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Log ind | V3 Eksamen</title>
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap css -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/logInd.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,7 +19,52 @@
     <![endif]-->
   </head>
   <body>
-    
+    <div class="container-fluid">
+        <div class="container">
+            <img src="img/header_img.jpg" alt="logo" class="img-responsive">
+            <!-- Navigation -->
+            <nav class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar" style="background-color:#ccc;"></span>
+                        <span class="icon-bar" style="background-color:#ccc;"></span>
+                        <span class="icon-bar" style="background-color:#ccc;"></span>                        
+                    </button>
+                </div>
+                <div class="row collapse navbar-collapse" id="myNavbar">
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="#">Planter</a></li>
+                        <li><a href="#">Indretning</a></li>
+                        <li class="active" style="float:right"><a href="logInd.php">Log Ind</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <!-- Log in formular -->
+            <article class="col-md-12">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="username" style="font-size:12px; color:#333333;"><b>Brugernavn</b></label>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Indtast dit brugernavn" style="border-radius:2px;">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" style="font-size:12px; color:#333333;"><b>Password</b></label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Indtast dit password" style="border-radius:2px;">
+                    </div>
+                    <input type="submit" value="Log ind" class=" btn btn-default bt-default " style="border-radius:2px;">
+                </form>
+                <hr>
+            </article>
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                       <p style="text-align:center; text-transform:uppercase;">&copy; 2017 - Wilderness</p>
+                    </div>
+                </div>
+            </footer>
+        </div><!-- /.container -->
+    </div><!-- /.container-fluid -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
