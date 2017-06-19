@@ -27,7 +27,32 @@
       <div class="container-fluid">
         <div class="container">
             <img src="img/header_img.jpg" alt="logo" class="img-responsive">
-            <!-- Navigation -->
+            
+            <!-- Tjekker om bruger er logget ind, hvis ja, så skriv "Hej <bruger>" samt log ud knap -->
+            <?php
+                if(isset($_SESSION['username']) && !empty($_SESSION['username'])){ ?>
+                    <nav class="row">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar" style="background-color:#ccc;"></span>
+                                <span class="icon-bar" style="background-color:#ccc;"></span>
+                                <span class="icon-bar" style="background-color:#ccc;"></span>                        
+                            </button>
+                        </div>
+                        <div class="row collapse navbar-collapse" id="myNavbar">
+                            <ul>
+                                <li><a class="active" href="index.php">Home</a></li>
+                                <li><a href="#">Planter</a></li>
+                                <li><a href="#">Indretning</a></li>
+                                <li style="float:right"><a href="logout.php?logout=true">Hej <?php echo $_SESSION['username']; ?>, log ud</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                 <?php
+                } else{
+            ?>
+            <!-- Hvis bruger ikke er logget ind vises nedenstående -->
+            <!-- Navigation og login-->
             <nav class="row">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -45,8 +70,12 @@
                     </ul>
                 </div>
             </nav>
+            <?php
+            }
+            ?>
+            
+            <!-- Sidebar -->
             <div class="row">
-                <!-- Sidebar -->
                 <aside class="col-md-3 row">
                     <div class="col-sm-12">
                         <img src="img/frk_overspringshandling.jpg" alt="bio_pic" class="img-responsive">
