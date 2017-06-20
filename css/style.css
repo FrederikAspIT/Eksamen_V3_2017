@@ -1,0 +1,81 @@
+/* SASS GOES HERE */
+/* line 2, ../../xampp/htdocs/Eksamen_V3_2017/css/style.scss */
+body {
+  font-family: sans-serif; }
+
+/*Navigation css start*/
+/* line 8, ../../xampp/htdocs/Eksamen_V3_2017/css/style.scss */
+nav {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 40px; }
+
+/* line 14, ../../xampp/htdocs/Eksamen_V3_2017/css/style.scss */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+/* line 22, ../../xampp/htdocs/Eksamen_V3_2017/css/style.scss */
+nav ul li {
+  float: left; }
+
+/* line 29, ../../xampp/htdocs/Eksamen_V3_2017/css/style.scss */
+nav ul li a {
+  font-size: 12px;
+  display: block;
+  color: #777;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 18px;
+  padding-top: 18px; }
+
+/* line 42, ../../xampp/htdocs/Eksamen_V3_2017/css/style.scss */
+a:hover {
+  text-decoration: none; }
+
+/* line 46, ../../xampp/htdocs/Eksamen_V3_2017/css/style.scss */
+.active {
+  background-color: #e7e7e7; }
+
+/* line 50, ../../xampp/htdocs/Eksamen_V3_2017/css/style.scss */
+nav .navbar-toggle {
+  background-color: white;
+  color: #777; }
+
+/*Navigation css end*/
+/*Sidebar css start*/
+/* line 59, ../../xampp/htdocs/Eksamen_V3_2017/css/style.scss */
+aside p {
+  padding-top: 20px;
+  color: #333333;
+  font-size: 12px; }
+
+/* line 65, ../../xampp/htdocs/Eksamen_V3_2017/css/style.scss */
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+/* line 72, ../../xampp/htdocs/Eksamen_V3_2017/css/style.scss */
+aside ul li {
+  float: left; }
+
+/* line 76, ../../xampp/htdocs/Eksamen_V3_2017/css/style.scss */
+aside ul li a {
+  display: block;
+  padding: 1px 3px;
+  text-decoration: none;
+  color: black; }
+
+/*Sidebar css end*/
+/*Article css start*/
+/*Article css end*/
+/*Formular css start*/
+/*Formular ccs end*/
+
+/*# sourceMappingURL=style.css.map */

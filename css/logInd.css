@@ -1,0 +1,51 @@
+/* SASS GOES HERE */
+/* line 2, ../../xampp/htdocs/Eksamen_V3_2017/css/logInd.scss */
+body {
+  font-family: sans-serif; }
+
+/*Navigation css start*/
+/* line 8, ../../xampp/htdocs/Eksamen_V3_2017/css/logInd.scss */
+nav {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 40px; }
+
+/* line 14, ../../xampp/htdocs/Eksamen_V3_2017/css/logInd.scss */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+/* line 22, ../../xampp/htdocs/Eksamen_V3_2017/css/logInd.scss */
+nav ul li {
+  float: left; }
+
+/* line 29, ../../xampp/htdocs/Eksamen_V3_2017/css/logInd.scss */
+nav ul li a {
+  font-size: 12px;
+  display: block;
+  color: #777;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 18px;
+  padding-top: 18px; }
+
+/* line 42, ../../xampp/htdocs/Eksamen_V3_2017/css/logInd.scss */
+a:hover {
+  text-decoration: none; }
+
+/* line 46, ../../xampp/htdocs/Eksamen_V3_2017/css/logInd.scss */
+.active {
+  background-color: #e7e7e7; }
+
+/* line 50, ../../xampp/htdocs/Eksamen_V3_2017/css/logInd.scss */
+nav .navbar-toggle {
+  background-color: white;
+  color: #777; }
+
+/*Navigation css end*/
+
+/*# sourceMappingURL=logInd.css.map */

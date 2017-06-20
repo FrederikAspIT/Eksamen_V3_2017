@@ -19,6 +19,7 @@ if(empty($rows)){
         if($row['dbPassword'] == $formPassword){
             //Sørg for at brugeren er logget ind og har "tilladelser"
             session_start();
+            // $_SESSION['email'] = 'line.line@gmail.com';
             $_SESSION['username'] = $formUsername;
             header("location: index.php");
         }
