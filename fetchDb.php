@@ -1,10 +1,13 @@
 <?php 
+// Bro til Databasen
 require_once "connect.php";
 
-// Vælg alt fra articles tabellen
+// Henter alt indhold fra articles tabellen, og udfører det nedenunder 
 $statement = $DBH->prepare("SELECT * FROM articles");
 $statement->execute();
 
+// Med "PDO::FETCH_ASSOC" bliver tabellens værdier hentet ud som et associativt array
+// while loop'et bliver ved med at hente artikler, indtil der ikke er flere 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC)){ ?>
     <article class="col-md-12">
         <h3 class="col-md-12 col-md-offset-1" style="text-transform: uppercase; font-size:20px;"><?php echo $row['heading'] ?></h3>

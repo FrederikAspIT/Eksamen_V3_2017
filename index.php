@@ -42,7 +42,7 @@
                         <div class="row collapse navbar-collapse" id="myNavbar">
                             <ul>
                                 <li><a class="active" href="index.php">Home</a></li>
-                                <li><a href="#">Planter</a></li>
+                                <li><a href="planter.php">Planter</a></li>
                                 <li><a href="#">Indretning</a></li>
                                 <li style="float:right"><a href="logout.php?logout=true">Hej <?php echo $_SESSION['username']; ?>, log ud</a></li>
                             </ul>
@@ -133,7 +133,7 @@
                      }
                     ?>
                     
-                    <!-- Artikel her -->
+                    <!-- Skaber forbindelse til filen fetchDb.php, hvor artiklerne bliver hentet ned fra databasen -->
                     <?php include "fetchDb.php"; ?>
                     
                     
